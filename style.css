@@ -4,6 +4,11 @@ body,html{
     background: #030200;
     scroll-behavior: smooth;
 }
+* {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    text-decoration: none;
+}
 
 .nav{
    font-family: 'Bebas Neue', cursive;
@@ -44,8 +49,7 @@ body,html{
     margin: 0px;
     padding: 0px;
 }
-.nav-expand
-{ 
+.nav-expand { 
     /* height: ; */
 }
 .menu {
@@ -57,11 +61,16 @@ body,html{
     align-items: center;
     cursor: pointer;
   }
-
+  .open .line:nth-child(1) {
+  
+  }
+  
   .open .line:nth-child(2) {
     transform: translateX(10px);
   }
-
+  
+  .open .line:nth-child(3) {
+  }
   .line {
     width: 100%;
     height: 3px;
@@ -93,7 +102,7 @@ a{
    text-decoration: none;
 }
 
-.banner-background
+/* .banner-background
 { 
     transition: background-image 2s ease-in-out;
     padding-bottom: 56.25%;
@@ -111,15 +120,46 @@ a{
    background-image: url('./images/TFEMI.png');
    background-size: cover;
    background-attachment: fixed;
-  /* background-position: center center; */
+background-position: top;
 
 
 }
+.bgTwo
+{ 
+    background-image: url('./images/RELIC\ RYMES.png');  
+    background-size: cover;
+    background-position: fixed !important ;
+    background-attachment: fixed !important;
+}
+.bgThree
+{ 
+    background-image: url('./images/JU!CE.png');  
+    background-size: cover;
+    background-attachment: fixed !important;
+}
+.bgFour
+{ 
+    background-image: url('./images/CAM\ LAVISH.JPG');  
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.bgFive
+{ 
+    background-image: url('./images/RIESE\ KENDRICK.JPG');  
+    background-size: cover;
+    background-attachment: fixed !important;
+    background-position-y: center;
 
+}
+.bgSix
+{ 
+    background-image: url('./images/ENFINOT.png');  
+    background-size: cover;
+    background-attachment: fixed !important;
+    background-position-y: center;
 
-
-
-
+} */
 .swiper-wrapper{
     height: 100% !important;
 }
@@ -132,20 +172,19 @@ a{
 {
     header{
         position:relative;
-        height: 100vh;
+        /* height: 100vh; */
     
     }
 }
 @media screen and (max-width: 1440px){
- 
+    .swiper{
+        /* height: 599px  !important; */
+    }
 }
-@media screen and (max-width: 750px)
+@media screen and (max-width: 650px)
 { 
     .banner-background{
-        height: 100vh;
-    }
-    .section-header{ 
-        transform: translateY(20px) !important ;
+        height: 100%;
     }
 }
 .swiper {
@@ -156,10 +195,17 @@ header{
     position:relative;
 
 }
-@media screen and (max-width: 555px){
+@media screen and (max-width: 750px){
     .banner-foreground{
         justify-content: center !important;
         align-items:center !important;
+        padding-bottom: 195.25% !important;
+    }
+    .banner-background{
+        padding-bottom: 195.25% !important;
+        background-size: 100% 100% !important;
+
+
     }
     .nav{
         background: transparent  !important;
@@ -188,33 +234,11 @@ header{
     }
 
 
-  .bgOne{
-    background-position: top !important ;
-    background-size: contain !important;
-
-  }
-  .bgTwo{
-    background-position-y: center;
-    background-size: contain;
-
-  }
-  .bgThree{
-    background-position-y: center;
-    background-size: contain;
-  }
-   .swiper{
-    height: 400px !important;
-   }
-
-   .banner-title{
-    transform: translateY(-280px) !important;
-   }
+   
 }    
 
-
-label{
-    color: #fff;
-}
+/* No longer using  */
+/* 
 
 .banner-foreground
 {
@@ -223,7 +247,7 @@ label{
     top: 0;
     left: 0;
     width: -webkit-fill-available;
-    height: 100%;
+    height: 100vh;
     z-index: 1;
     justify-content: flex-end;
     align-items: flex-end;
@@ -270,23 +294,51 @@ label{
     .banner-content h3 { 
         font-size: 54px;
     }
-}
+} */
 
+
+/* Header section  */
+.headersection {
+    height: 120vh;
+    background: url('/images/RELIC\ RYMES.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.headercontent {
+    height: 100%;
+    background: ;
+    display: flex;
+
+}
+.contenttextmain {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+    
+    
+}
+/* header section end */
 /* section part */
     .section-artist{
-        margin-top: 80px;
+        margin-top: -215px;
         z-index: 10;
-        background: #030200;
+        background: transparent;
     }
 
     .section-header{
-        transform: translateY(100px);
+        transform: translateY(75px);
         position: relative;
         z-index: 1;
         pointer-events: none;
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        background: transparent;
     }
     .section-header h2 {
         font-size: 160px;
